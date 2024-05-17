@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.apptoeat.psychologist"
         minSdk 27
-        targetSdk 32
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -23,8 +23,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -36,4 +36,20 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation "com.google.ai.client.generativeai:generativeai:0.2.2"
+
+    implementation "com.google.guava:guava:31.0.1-android"
+
+    // Required for streaming operations (to use `Publisher` from Guava Android)
+    implementation "org.reactivestreams:reactive-streams:1.0.4"
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.32'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+    runtimeOnly 'androidx.compose.material3:material3:1.3.0-alpha03'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+
 }

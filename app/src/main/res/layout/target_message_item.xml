@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/target_message_background"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:elevation="2dp"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/playMessageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="6dp"
+        android:padding="4dp"
+        android:layout_below="@+id/messageTextView"
+        android:layout_alignStart="@id/messageTextView"
+        android:layout_marginTop="4dp"/>
+</RelativeLayout>
