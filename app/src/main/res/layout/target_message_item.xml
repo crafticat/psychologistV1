@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content"
-    android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
+        android:maxWidth="300dp"
         android:layout_height="wrap_content"
         android:background="@drawable/target_message_background"
         android:textColor="#000000"
@@ -12,14 +16,15 @@
         android:elevation="2dp"
         android:layout_alignParentRight="true"/>
 
-    <Button
+    <ImageButton
+        app:tint="@color/white"
+
         android:id="@+id/playMessageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        android:textSize="6dp"
-        android:padding="4dp"
-        android:layout_below="@+id/messageTextView"
-        android:layout_alignStart="@id/messageTextView"
-        android:layout_marginTop="4dp"/>
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:background="@color/transparent"
+        android:layout_toStartOf="@id/messageTextView"
+        app:srcCompat="@drawable/mice"
+        android:scaleType="fitCenter"
+        tools:ignore="NotSibling" />
 </RelativeLayout>

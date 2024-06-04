@@ -15,11 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.apptoeat.psychologist.history.ChatData;
 import com.apptoeat.psychologist.history.History;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import lombok.Getter;
 
@@ -117,7 +113,5 @@ public class MainActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-
-
     }
 }
